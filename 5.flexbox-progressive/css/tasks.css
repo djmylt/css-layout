@@ -14,7 +14,13 @@
     padding-left: 0.5em;
 }
 
+.o-grid--flex {
+    display: flex;
+    flex-flow: wrap;
+}
 
+.o-grid--flex .o-grid__item { display: flex; }
+.o-grid--flex .o-grid__item > * { flex-grow: 1; }
 
 /* justified nav */
 .task-nav {
@@ -24,8 +30,11 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 .task-nav li {
     background: #efefef;
     padding: 1em;
+    display: inline-block;
 }
